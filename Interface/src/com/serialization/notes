@@ -1,0 +1,29 @@
+Process for Serailization :
+
+Step 1: Create Customer.java
+	Important points:
+	- implements Serializable makes the class serializable.
+	- serialVersionUID identifies the version of the serialized class.
+	- toString() helps us display the object's data.
+
+Step 2: Create SerializationDemo.java
+
+Step 3: Understand the execution flow
+	We create a Customer object.
+	FileOutputStream creates or opens the file.
+	ObjectOutputStream converts the object into a serialized byte stream.
+	writeObject() writes the serialized object into the file.
+	The customer.ser file stores the serialized data.
+
+step 4 : Done
+Serializable interface. 
+ObjectOutputStream.
+FileOutputStream.
+writeObject().
+Binary data storage.
+transient keyword.
+
+
+There are two important things happening:
+1. readObject() reads the serialized data and returns an object of type Object.
+2. (Student) converts that returned reference into a Student reference using type casting.
